@@ -1,0 +1,184 @@
+---
+title: "Open social and behavioral science"
+author: "Rick Gilmore"
+date: "`r Sys.time()`"
+css: css/ioslides.css
+output: 
+  ioslides_presentation:
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.width = 8.5)
+```
+
+## Acknowledgements
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=150px>
+<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=150px>
+</br>
+<img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height=150px>
+<img src="http://newsroom.unl.edu/announce/files/file77330.jpg" height=150px/>
+<img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=150px/>
+</div>
+
+---
+
+### Karen Adolph (NYU)
+### Catherine Tamis-LeMonda (NYU)
+### Kasey Soska (Databrary/PLAY)
+### Jeff Spies (Databrary, 221b.io)
+
+## Agenda
+
+- Is there a reproducibility 'crisis' in science?
+- Video as data and documentation
+- Big data behavioral science
+- The future of open social & behavioral science
+
+# Reproducibility
+
+## Improving reproducibility
+
+- Open data
+- Open materials
+- Better, more widely shared procedural documentation
+- Data interoperability and linkage
+
+# Video as data and documentation
+
+## Virtues of video
+
+- Captures spatial & temporal structure of behavior
+- Huge potential for secondary use
+
+## Challenges of video
+
+- Faces & voices, names
+- Blurring, alteration diminishes value for secondary use
+- Hard(er) to share
+- Diversity of formats
+
+## Meeting the challenges
+
+- Securing permission to share
+- Restricting access
+- Institutional agreement
+- Consistent format conversion
+
+## Databrary.org
+
+# Video-centered big data behavioral science
+
+## Play & Learning Across a Year (PLAY) project
+
+## Linking micro to macro...
+
+<div class="centered">
+<img src="img/PLAY-collection-map-1.png" height = 550px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/race-by-county-all-regions-plot-1.png" height=550px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/ed-attain-bars-plot-1.png" height=550px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/per-capita-income-plot-1.png" height=550px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/spanish-speaking-plot-1.png" height=550px/>
+</div>
+
+## Reproducible workflows
+
+- R & R Markdown, `acs`, `choroplethr` packages
+
+<div class="centered">
+<img src="img/play-behaviorome-github.jpg" height=400px/>
+</div>
+
+# The future of open social & behavioral science
+
+## Improving reproducibility
+
+- Open data & materials
+- Better, more widely shared procedural documentation
+
+## Spanning levels of analysis
+
+- Planning for linkage (e.g., geographic)
+- Blurring disciplinary boundaries
+
+## Accelerating discovery
+
+- FAIR (**F**indable, **A**ccesible, **I**nteroperable, and **R**eusable) data [(Wilkinson et al., 2016)](http://dx.doi.org/10.1038/sdata.2016.18)
+- Federal data sources with (where possible) APIs 
+- Data repositories
+
+## Maintaining participant privacy
+
+- Ask permission to share (especially for sensitive, identifiable data)
+    - Use template language
+    - [(Gilmore & Nilsonne, 2017)](https://osf.io/9d5hr/)
+- Don't promise to destroy data (but GDPR?)
+- Don't unduly restrict future reuses
+
+## The whole elephant...
+
+<div class="centered">
+<img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=550px>
+</div>
+
+<div class="notes">
+To make the future of big data behavioral science one where we're not just blind men studying our small part of the elephant.
+</div>
+
+---
+
+<div class="centered">
+<img src="http://static.neatorama.com/images/2012-09/girl-hugging-elephant.jpg" height=550px>
+</div>
+
+---
+
+<div class="centered">
+
+<video width="600" loop data-autoplay>
+  <source src="mov/databrary-splash.mp4" type="video/mp4">
+</video>
+
+rogilmore@psu.edu
+
+<https://gilmore-lab.github.io>
+
+<https://github.com/gilmore-lab/2018-09-07-fprs/>
+</div>
+
+# Materials
+
+---
+
+This talk was produced on `r Sys.time()` in [RStudio 1.1.453](http://rstudio.com) using R Markdown.
+The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/2018-09-07-fprs/>. 
+Information about the R Session that produced the slides is as follows:
+
+---
+
+```{r session-info}
+sessionInfo()
+```
+
