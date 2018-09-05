@@ -1,9 +1,21 @@
 ---
-title: "Open social and behavioral science"
+title: "Big data behavioral science: From micro- to macro-scale"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
 css: css/ioslides.css
-output: 
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    lib_dir: libs
+    incremental: false
+    theme: simple
+    transition: none
+    reveal_plugins: ["notes", "zoom"]
+    reveal_options:
+      slideNumber: true
+      previewLinks: false
+      center: true
+      touch: true
   ioslides_presentation:
     widescreen: true
 ---
@@ -34,10 +46,72 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 8.5)
 
 - Is there a reproducibility 'crisis' in science?
 - Video as data and documentation
-- Big data behavioral science
+- From micro- to macro-scale
 - The future of open social & behavioral science
 
 # Reproducibility
+
+## Is there a reproducibility crisis?
+
+- Yes, a significant crisis
+- Yes, a slight crisis
+- No crisis
+- Don't know
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=450px>
+<img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=500px>
+</a>
+
+[Baker 2016](http://doi.org/10.1038/533452a)
+</div>
+
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
+## Not just behavioral science...
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg" height=500px>
+</a>
+
+---
+
+<div class="centered">
+<img src="https://cdn.shopify.com/s/files/1/0877/5762/products/Rigor_Mortis_1024x1024.jpg?v=1491240110" height=500px/>
+</div>
+
+## Why is reproducibility hard? {.smaller}
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg" height=500px>
+</a>
+
+[Baker 2016](http://doi.org/10.1038/533452a)
+</div>
+
+## A manifesto for reproducible science {.smaller}
+
+<div class="centered">
+<a href="http://www.nature.com/articles/s41562-016-0021/figures/1">
+<img src="http://www.nature.com/article-assets/npg/nathumbehav/2017/s41562-016-0021/images_hires/w926/s41562-016-0021-f1.jpg" height=500px>
+</a>
+
+[Munafo et al. 2017]](http://doi.org/10.1038/s41562-016-0021)
+</div>
 
 ## Improving reproducibility
 
@@ -48,12 +122,34 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 8.5)
 
 # Video as data and documentation
 
-## Virtues of video
+---
+
+<div class="centered">
+<video controls>
+  <source src="https://nyu.databrary.org/slot/27087/0,372193/asset/119877/download?inline=truesplash.mp4#t=2,37" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2017). PLAY Project: Pilot Data Collections. Databrary. Retrieved August 21, 2018 from https://nyu.databrary.org/volume/444
+</div>
+
+## Video...
 
 - Captures spatial & temporal structure of behavior
 - Huge potential for secondary use
 
-## Challenges of video
+## Video as documentation... {.smaller}
+
+<div class="centered">
+<video width="800" controls>
+  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+The PLAY Project Wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/landing>
+</div>
+
+## Video's challenges
 
 - Faces & voices, names
 - Blurring, alteration diminishes value for secondary use
@@ -62,18 +158,72 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 8.5)
 
 ## Meeting the challenges
 
-- Securing permission to share
-- Restricting access
+- Convert to consistent file formats
+- Restrict access
 - Institutional agreement
-- Consistent format conversion
+- Secure permission to share
 
-## Databrary.org
+---
 
-# Video-centered big data behavioral science
+<div class="centered">
+<img src="img/databrary-institutions.jpg" height=500px/>
+</div>
 
-## Play & Learning Across a Year (PLAY) project
+---
 
-## Linking micro to macro...
+<div class="centered">
+<img src="img/release-levels.jpg" height=500px/>
+</div>
+
+---
+
+<div class="centered">
+<video width="800" loop data-autoplay>
+  <source src="mov/databrary-splash.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+# Big data behavioral science: From micro- to macro-scale
+
+## Play & Learning Across a Year (PLAY) {.smaller}
+
+<div class="centered">
+<video controls>
+  <source src="https://nyu.databrary.org/slot/27087/0,372193/asset/119877/download?inline=truesplash.mp4#t=37,80" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2017). PLAY Project: Pilot Data Collections. Databrary. Retrieved August 21, 2018 from https://nyu.databrary.org/volume/444
+</div>
+
+## Multiple functional domains
+
+- Language & gesture
+- Locomotion & physical activity
+- Object interaction
+- Emotional expression
+
+---
+
+<div class="centered">
+<img src="https://github.com/PLAY-behaviorome/video-coding/blob/master/img/NYU020/time-line-plot-00-10-1.png?raw=true" height=500px/>
+</div>
+
+## Parent-reported...
+
+- Demographic & health information
+- Child vocabulary
+- Media use
+- Temperament
+
+## Sampling
+
+- $n=900$ dyads: 300 12-mo-olds, 300 18 mo-olds, 300 24 mo-olds
+- First-borns
+- Approximating demographics of $n=30$ data collection sites
+
+---
 
 <div class="centered">
 <img src="img/PLAY-collection-map-1.png" height = 550px/>
@@ -103,9 +253,25 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 8.5)
 <img src="img/spanish-speaking-plot-1.png" height=550px/>
 </div>
 
+## Shared on Databrary
+
+- Permission to share with researchers
+- With geographic codes (Census Block Group)
+
 ## Reproducible workflows
 
-- R & R Markdown, `acs`, `choroplethr` packages
+<div class="centered">
+<video controls width=600px>
+  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Video-enhanced wiki: <https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php>
+</div>
+
+---
+
+- R + R Markdown, `acs`, `choroplethr` packages
 
 <div class="centered">
 <img src="img/play-behaviorome-github.jpg" height=400px/>
@@ -122,6 +288,8 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 8.5)
 
 - Planning for linkage (e.g., geographic)
 - Blurring disciplinary boundaries
+- Seeking partnerships
+    - What would *your* colleagues want to know about the microstructure of infant/mother behavior?
 
 ## Accelerating discovery
 
@@ -137,7 +305,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 8.5)
 - Don't promise to destroy data (but GDPR?)
 - Don't unduly restrict future reuses
 
-## The whole elephant...
+---
 
 <div class="centered">
 <img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=550px>
