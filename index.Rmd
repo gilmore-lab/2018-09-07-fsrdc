@@ -8,7 +8,7 @@ output:
     self_contained: false
     lib_dir: libs
     incremental: false
-    theme: simple
+    theme: serif
     transition: none
     reveal_plugins: ["notes", "zoom"]
     reveal_options:
